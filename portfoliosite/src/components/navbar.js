@@ -10,13 +10,13 @@ function Navbar() {
                 </li>
                 <div className="flex space-x-4">
                     <li>
-                        <Link to="/" className="text-white px-3 py-2 rounded-md">Home</Link>
+                        <Link to="/" className="text-white px-3 py-2 rounded-md hover:font-semibold">Home</Link>
                     </li>
                     <li>
-                        <Link to="/about" className="text-white px-3 py-2 rounded-md">About</Link>
+                        <Link to="/about" className="text-white px-3 py-2 rounded-md hover:font-semibold">About</Link>
                     </li>
                     <li>
-                        <Link to="/contact" className="text-white px-3 py-2 rounded-md">Contact</Link>
+                        <Link to="/contact" className="text-white px-3 py-2 rounded-md hover:font-semibold">Contact</Link>
                     </li>
                 </div>
             </ul>
