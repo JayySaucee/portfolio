@@ -13,10 +13,14 @@ const HomePage = () => {
         document.title = "Jorge Alejandre";
     }, []);
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div>
             {/* Introduction section of the page with a photo of myself */}
-            <div className="relative bg-gray-900 text-center w-full min-h-screen flex items-center justify-center">
+            <div id="home" className="relative bg-gray-900 text-center w-full min-h-screen flex items-center justify-center">
                 <div className="flex flex-col md:flex-row items-center justify-center w-full p-8">
                     <div className="flex-1 text-left p-8" data-aos="fade-right">
                         <h1 className="text-white text-8xl">Jorge Alejandre</h1>
@@ -35,7 +39,7 @@ const HomePage = () => {
             </div>
         
             {/* About Me section of information */}
-            <div className="bg-gray-900 text-center text-white py-16">
+            <div id="about" className="bg-gray-900 text-center text-white py-16">
                 <h1 className="text-4xl mb-8" data-aos="fade-in">Get to know a little bit about me!</h1>
                 <div className="flex flex-col md:flex-row justify-center items-start md:items-stretch space-y-8 md:space-y-0 md:space-x-8 px-8">
                     <div className="flex-1 bg-gray-800 p-8 rounded-lg" data-aos="fade-up">
@@ -60,7 +64,7 @@ const HomePage = () => {
             </div>
         
             {/* Skills Section */}
-            <div className="bg-gray-900 text-center text-white py-16">
+            <div id="skills" className="bg-gray-900 text-center text-white py-16">
                 <h1 className="text-4xl mb-8" data-aos="fade-in">Skills</h1>
                 <div className="flex flex-wrap justify-center space-x-4">
                     <span className="bg-gray-800 p-4 rounded-lg">JavaScript</span>
@@ -77,7 +81,7 @@ const HomePage = () => {
             </div>
         
             {/* Projects Section */}
-            <div className="bg-gray-900 text-center text-white py-10">
+            <div id="projects" className="bg-gray-900 text-center text-white py-10">
                 <h1 className="text-4xl mb-8" data-aos="fade-in">Previous Projects</h1>
                 <div className="flex flex-col md:flex-row justify-center items-start md:items-stretch space-y-8 md:space-y-0 md:space-x-8 px-8">
                     <div className="flex-1 bg-gray-800 p-8 rounded-lg" data-aos="fade-up">
@@ -98,13 +102,13 @@ const HomePage = () => {
             </div>
         
             {/* Resume/CV Download Section */}
-            <div className="bg-gray-900 text-center text-white py-10">
+            <div id="resume" className="bg-gray-900 text-center text-white py-10">
                 <h1 className="text-4xl mb-8" data-aos="fade-in">Resume/CV</h1>
                 <a href="JorgeAlejandreResume.pdf" data-aos="fade-in" className="bg-gray-800 hover:bg-blue-400 text-white p-4 rounded-lg" download>Download My Resume</a>
             </div>
         
             {/* Personal Fun Fact Section */}
-            <div className="bg-gray-900 text-center text-white py-4">
+            <div id="fun-facts" className="bg-gray-900 text-center text-white py-4">
                 <h1 className="text-4xl mb-8" data-aos="fade-in">Fun Facts About me</h1>
                 <p className="text-2xl w-full max-w-4xl mx-auto leading-relaxed bg-gray-800 rounded p-4" data-aos="fade-up">
                     When I'm not coding, I enjoy gaming on my desktop. This can range from hero shooters such as Marvel Rivals to exploration survival games such as No Man's Sky. I am typically very open to playing any new game as well. Besides gaming, I also enjoy spending time with my girlfriend and our cat playing in our home. My cat is a 3 year old bombay who enjoys being mischievious around our home. I also enjoy going on trips for vacation and exploring new places. It is my dream to one day travel across the world and explore Europe and Asia.
@@ -112,7 +116,7 @@ const HomePage = () => {
             </div>
 
             {/* Gallery Section */}
-            <div className='bg-gray-900 text-center text-white'>
+            <div id="gallery" className='bg-gray-900 text-center text-white'>
                 <Gallery />
             </div>
         </div>
